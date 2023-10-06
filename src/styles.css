@@ -1,8 +1,12 @@
 :root {
-  --heading-font-family: 'Croissant One', serif;
-  --main-font-family: font-family: 'Tajawal', sans-serif;
+  --heading-font-family: "Croissant One", serif;
+  --main-font-family: "Tajawal", sans-serif;
+}
+
+body {
+  font-family: var(--main-font-family);
 }
 
 h1 {
-    font-family: var(--heading-font-family);
+  font-family: var(--heading-font-family);
 }
