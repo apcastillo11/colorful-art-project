@@ -87,14 +87,22 @@ header a {
   max-width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
 section {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 60px 0;
+  max-width: 100%;
+  padding: 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
 }
 
 main {
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 main h2 {
@@ -109,7 +117,7 @@ main h2 {
 }
 
 main h3 {
-  color: #272044;
+  color: rgb(188, 12, 241);
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;
