@@ -73,12 +73,55 @@ header a {
 .grid {
   display: grid;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 
 section {
   margin: 0 auto;
   max-width: 1200px;
+  padding: 60px 0;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+main h2 {
+  color: #272044;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  color: #272044;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 footer {
@@ -90,7 +133,6 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -135,5 +177,14 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-gap: 32px;
+    grid-template-columns: 1fr;
   }
 }
