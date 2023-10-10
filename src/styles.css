@@ -88,6 +88,10 @@ header a {
   width: 100%;
 }
 
+.img-responsive.blue {
+  filter: brightness(150%) hue-rotate(80deg) contrast(150%);
+}
+
 .text-center {
   text-align: center;
 }
@@ -110,6 +114,10 @@ header a {
   padding: 30px;
 }
 
+.iframe-container {
+  margin-top: 30px;
+}
+
 .btn {
   background: radial-gradient(
     circle at 52.1% -29.6%,
@@ -129,19 +137,20 @@ header a {
   text-transform: uppercase;
 }
 
-.blockquote {
-  margin-top: 20px;
-}
-
 section {
   margin: 0 auto;
   max-width: 100%;
   padding: 100px;
 }
 
-section.secondary {
+section.secondary,
+section.photo-gallery {
   background: rgba(255, 209, 255, 0.31);
-  border: 1px solid white;
+}
+
+section .video {
+  aspect-ratio: 16/9;
+  width: 100%;
 }
 
 main {
@@ -190,6 +199,35 @@ main p {
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.7;
+}
+
+.photo-gallery h2 {
+  margin-bottom: 30px;
+}
+
+.photo-gallery h3 {
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+
+table {
+  background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+}
+
+table img {
+  height: 325px;
+  min-width: 100%;
+}
+
+.table {
+  overflow-x: scroll;
 }
 
 footer {
@@ -264,6 +302,15 @@ footer section {
     padding: 30px;
   }
 
+  section h3 {
+    line-height: 1;
+    margin: 10px 0;
+  }
+
+  table img {
+    height: 200px;
+  }
+
   footer section {
     padding: 40px;
   }
@@ -273,15 +320,16 @@ footer section {
     grid-template-columns: 1fr;
   }
 
+  .flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .card-header img {
     display: none;
   }
 
   .embed {
     aspect-ratio: 16/9;
-  }
-
-  .blockquote {
-    grid-gap: 10px;
   }
 }
