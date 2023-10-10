@@ -84,11 +84,40 @@ header a {
 }
 
 .img-responsive {
+  display: block;
   max-width: 100%;
 }
 
 .text-center {
   text-align: center;
+}
+
+.card {
+  background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  margin: 20px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.btn {
+  background: radial-gradient(
+    circle at 52.1% -29.6%,
+    rgb(39, 32, 68) 0%,
+    rgb(14, 2, 34) 100.2%
+  );
+  background-repeat: no-repeat;
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 section {
@@ -98,7 +127,8 @@ section {
 }
 
 section.secondary {
-  background: #f8f8f8;
+  background: rgba(255, 209, 255, 0.31);
+  border: 1px solid white;
 }
 
 main {
@@ -106,7 +136,6 @@ main {
 }
 
 main h2 {
-  color: #272044;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -117,10 +146,28 @@ main h2 {
 }
 
 main h3 {
-  color: rgb(188, 12, 241);
+  background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;
+  margin: 0;
+}
+
+main h4 {
+  color: #272044;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+main h5 {
+  color: #272044;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
   margin: 0;
 }
 
