@@ -129,6 +129,10 @@ header a {
   text-transform: uppercase;
 }
 
+.blockquote {
+  margin-top: 20px;
+}
+
 section {
   margin: 0 auto;
   max-width: 100%;
@@ -275,5 +279,9 @@ footer section {
 
   .embed {
     aspect-ratio: 16/9;
+  }
+
+  .blockquote {
+    grid-gap: 10px;
   }
 }
